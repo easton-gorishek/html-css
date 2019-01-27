@@ -4,6 +4,7 @@ header {
 }
 
 main {
+  margin-top: 5px;
   border: 5px solid blue;
 }
 
@@ -14,6 +15,7 @@ section {
 }
 
 footer {
+  margin-top: 5px;
   border: 5px solid red;
   text-align: center;
 }
