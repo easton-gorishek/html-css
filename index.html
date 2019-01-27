@@ -15,20 +15,19 @@
   <main>
     <article>
 
-      <section id="add-item">
-        <form>
-          <label for="item">
+      <section>
+        <form id="add-item">
+          <label for="input-item">
             Add an item:
           </label>
-          <input type="text" id="item">
+          <input type="text" name="userInput" id="item" autocomplete="off">
           <button>Submit</button>
         </form>
       </section>
     
-      <form>
       <section id="unordered-list-section">
         <h2>An unordered list.</h2>
-        <ul>
+        <ul id="unordered-list">
           <li>apples</li>
           <li>bananas</li>
           <li>coffee</li>
@@ -71,9 +70,6 @@
         <p id="answer" class="hidden"><b>Correct answer:</b> CSS</p>
 
         <button id="question-1">Reveal Answer</button>
-
-        <form>
-        </form>
       </section>
 
     </article>
