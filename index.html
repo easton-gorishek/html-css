@@ -14,7 +14,7 @@
 
   <main>
     <article>
-      <section id="first-section">
+      <section id="unordered-section">
         <h2>An unordered list.</h2>
         <ul>
           <li>apples</li>
@@ -25,7 +25,7 @@
         </ul>
       </section>
 
-      <section id="second-section">
+      <section id="ordered-section">
         <h2>An ordered list.</h2>
         <ol>
           <li>Create a repo in GitHub.</li>
@@ -36,19 +36,37 @@
         </ol>
       </section>
 
-      <section id="second-section">
-        <h2>A paragraph</h2>
+      <section id="paragraph-section">
+        <h2>A paragraph.</h2>
         <p>Lorem ipsum dolor amet heirloom blog sustainable chartreuse tacos paleo. Flannel whatever echo park leggings farm-to-table, vaporware pour-over portland retro PBR&B schlitz. Kinfolk kombucha lo-fi raw denim everyday carry ennui, raclette copper mug intelligentsia food truck jianbing hexagon. Fanny pack iceland subway tile pickled, vinyl edison bulb tofu prism disrupt roof party church-key chambray.
 
             Oh. You need a little dummy text for your mockup? How quaint.
             
             I bet you’re still using Bootstrap too…</p>
       </section>
+
+      <section id="quiz-section">
+        <h2>Quiz section.</h2>
+        
+        <p>If you wanted to visually create a smaller header would you...</p>
+
+        <ul>
+          <li>use another header tag (h2, h3, h4, etc)?</li>
+          <li>use a &lt;p&gt; tag.</li>
+          <li>use CSS.</li>
+        </ul>
+
+        <p id="answer" class="hidden"><b>Correct answer:</b> CSS</p>
+
+        <button id="question-1">Reveal Answer</button>
+      </section>
+
     </article>
   </main>
 
   <footer>
     <h2>Footer content goes here.</h2>
   </footer>
+  <script type="module" src="src/index.js"></script>
 </body>
 </html>
