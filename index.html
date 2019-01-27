@@ -14,7 +14,19 @@
 
   <main>
     <article>
-      <section id="unordered-section">
+
+      <section id="add-item">
+        <form>
+          <label for="item">
+            Add an item:
+          </label>
+          <input type="text" id="item">
+          <button>Submit</button>
+        </form>
+      </section>
+    
+      <form>
+      <section id="unordered-list-section">
         <h2>An unordered list.</h2>
         <ul>
           <li>apples</li>
@@ -25,7 +37,7 @@
         </ul>
       </section>
 
-      <section id="ordered-section">
+      <section id="ordered-list-section">
         <h2>An ordered list.</h2>
         <ol>
           <li>Create a repo in GitHub.</li>
@@ -50,15 +62,18 @@
         
         <p>If you wanted to visually create a smaller header would you...</p>
 
-        <ul>
+        <ol type="a">
           <li>use another header tag (h2, h3, h4, etc)?</li>
           <li>use a &lt;p&gt; tag.</li>
           <li>use CSS.</li>
-        </ul>
+        </ol>
 
         <p id="answer" class="hidden"><b>Correct answer:</b> CSS</p>
 
         <button id="question-1">Reveal Answer</button>
+
+        <form>
+        </form>
       </section>
 
     </article>
