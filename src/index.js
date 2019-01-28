@@ -1,13 +1,14 @@
-const revealButton = document.getElementById('question-1');
 
-const answer = document.getElementById('answer');
+const revealButton = document.getElementById('question-1');
+const itemForm = document.getElementById('add-item');
+const javaScriptQuestion = document.getElementById('javascript-question');
 
 revealButton.addEventListener('click', function() {
+  const answer = document.getElementById('answer');
   answer.classList.remove('hidden');
-  revealButton.disabled = true;
+  revealButton.remove();
 });
 
-const itemForm = document.getElementById('add-item');
 
 itemForm.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -22,4 +23,23 @@ itemForm.addEventListener('submit', function(event) {
 
   item.value = '';
   item.focus();
+});
+
+javaScriptQuestion.addEventListener('submit', function(event) {
+  event.preventDefault()
+
+  const answer = javaScriptQuestion.elements.answer.value;
+  let response = '';
+
+  if(answer !== 'false') {
+    response = 'Incorrect!';
+  }
+  else {
+    response = 'Correct!';
+  }
+
+  const responseMessage = document.getElementById('response');
+  responseMessage.textContent = response;
+  
+  javaScriptQuestion.remove();
 });
