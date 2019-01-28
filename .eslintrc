@@ -19,7 +19,7 @@
           "error",
           "always"
       ],
-      "eol-last": ["always"],
+      "eol-last": ["error"],
       "no-console": "warn",
       "indent": [
           "error",
